@@ -1,6 +1,5 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 /* Header styles */
@@ -9,9 +8,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     background-color: #53354a;
 }
 
@@ -45,21 +41,15 @@ header {
 /* About Me styles */
 
 .about-me {
-    width: 100%
-    padding: 78px 0;
-    background-color: #915d81;
-}
-
-.about-wrapper {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+   background-color: #915d81;
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
 }
 
 .profile-pic {
-    width: 20%;
+    width: 250px;
     height: auto;
     padding: 2% 5%;
     border-radius: 50%;
@@ -67,27 +57,28 @@ header {
 
 .about-text {
     width: 80%;
+    padding: 3%;
 }
 
 /* Proficiencies divider styles */
 
 .proficiencies {
     display: flex;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     background-color: #e6e6e6;
+    width: 100%;
 }
 
 .proficiencies-list {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
+    width: 100%;
 }
 
 .proficiencies-list li {
     display: inline-block;
-    padding: 0 20px;
-    color: #53354a;
     max-width: 100px;
+    text-align: center;
+    font-weight: bold;
 }
 
