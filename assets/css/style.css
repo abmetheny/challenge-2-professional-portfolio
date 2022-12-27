@@ -82,3 +82,43 @@ header {
     font-weight: bold;
 }
 
+/* Previous work styles */
+
+.previous-work {
+    background-color: #34212e;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+ }
+
+ .work-examples {
+    margin-top: 50px;
+ }
+
+ .work-examples ul {
+    padding: 0;
+ }
+
+ .work-examples li {
+    float: left;
+    width: 23%;
+    margin: 1%;
+    list-style-type: none;
+ }
+
+ #first-example {
+    width: 50%;
+ }
+
+ .work-examples img {
+    width: 100%;
+    margin-bottom: 10px;
+ }
+
+ .work-examples a {
+    color: white;
+    background-color: #915d81;
+    text-decoration: none;
+    float: left;
+    padding: 2%;
+ }
