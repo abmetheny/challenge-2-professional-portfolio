@@ -2,7 +2,7 @@
     --dark-background: #53354a;
     --light-background: #915d81;
     --white: white;
-    }
+}
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +25,7 @@ header {
 
 .nav-links {
     list-style: none;
-    }
+}
 
 .nav-links li {
     display: inline-block;
@@ -41,29 +41,29 @@ header {
 }
 
 .nav-links li a:hover {
-    color: var(--light-background);  
+    color: var(--light-background);
 }
 
 /* About Me section styles */
 
 .about-me {
-   background-color: var(--light-background);
-   width: 100%;
-   margin: 0 auto;
-   display: flex;
-   align-items: center;
-}
-
-.profile-pic {
-    width: 250px;
-    height: auto;
-    padding: 2% 5%;
-    border-radius: 50%;
+    background-color: var(--light-background);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .about-text {
     width: 80%;
     padding: 3%;
+}
+
+.profile-pic {
+    width: 20%;
+    min-width: 250px;
+    padding: 3%;
+    border-radius: 50%;
 }
 
 /* Proficiencies divider styles */
@@ -82,11 +82,16 @@ header {
     align-items: center;
 }
 
+.proficiencies-list {
+    padding: 0;
+}
+
 .proficiencies-list li {
     display: inline-block;
     max-width: 100px;
     text-align: center;
     font-weight: bold;
+    padding: 5px 8px;
 }
 
 /* Previous work section styles */
@@ -94,7 +99,7 @@ header {
 .previous-work {
     background-color: var(--dark-background);
     width: 100%;
- }
+}
 
 .previous-work ul {
     padding: 0;
@@ -156,13 +161,13 @@ footer {
 }
 
 footer h1 {
-    height: 40px;
+    font-size: 40px;
     padding: 10px;
 }
 
 .contact-me {
     list-style: none;
-    }
+}
 
 .contact-me li {
     display: inline-block;
@@ -178,5 +183,94 @@ footer h1 {
 }
 
 .contact-me li a:hover {
-    color: var(--white);  
+    color: var(--white);
+}
+
+/* Media queries */
+
+/* Tablets - move to two examples per line */
+@media screen and (max-width: 880px) {
+body{
+    background-color: red;
+}
+.title {
+    font-size: smaller;
+}
+}
+
+@media screen and (max-width: 747px) {
+    body{
+        background-color: yellow;
+    }
+    .previous-work li {
+        width: 48%;
+    }
+    footer h1 {
+        padding: 5px 8px;
+        font-size: 20px;
+    }
+    .contact-me li a {
+        font-size: 16px;
+    }
+    }
+
+
+/* Large smartphones - about me text/image stack, divider becomes sidebar */
+@media screen and (max-width: 610px) {
+    body{
+        background-color: blue;
+    }
+    .about-me {
+        flex-direction: column;
+    }
+    .proficiencies-list li {
+        font-size: smaller;
+    }
+
+    footer h1 {
+        width: 55%;
+    }
+    .contact-me {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 45%;
+    }
+    .contact-me h1 {
+        font-size: 20px;
+    }
+    .contact-me li {
+        width: 100%;
+    }
+    
+}
+
+/* Small smartphones - everything stacks */
+@media screen and (max-width: 420px) {
+    body{
+        background-color: green;
+    }
+    .nav-links {
+        padding: 0px;
+        margin: 0px;
+    }
+    .nav-links li a {
+        font-size: smaller;
+    }
+    .proficiencies-list {
+        flex-direction: column;
+    }
+    .proficiencies-list li {
+        max-width: 300px;
+    }
+    .previous-work li {
+        width: 98%;
+    }
+    .contact-me {
+        width: 60%;
+    }
+    .contact-me li a {
+        font-size: smaller;
+    }
+    
+
 }
