@@ -188,20 +188,15 @@ footer h1 {
 
 /* Media queries */
 
-/* Tablets - move to two examples per line */
+/* Tablets */
 @media screen and (max-width: 880px) {
-body{
-    background-color: red;
-}
-.title {
-    font-size: smaller;
-}
+    .title {
+        font-size: smaller;
+    }
 }
 
+/* Smaller tablets */
 @media screen and (max-width: 747px) {
-    body{
-        background-color: yellow;
-    }
     .previous-work li {
         width: 48%;
     }
@@ -212,21 +207,20 @@ body{
     .contact-me li a {
         font-size: 16px;
     }
-    }
+}
 
-
-/* Large smartphones - about me text/image stack, divider becomes sidebar */
+/* Large smartphones */
 @media screen and (max-width: 610px) {
-    body{
-        background-color: blue;
-    }
     .about-me {
         flex-direction: column;
+    }
+    .about-text {
+        width: 90%;
+        padding: 0;
     }
     .proficiencies-list li {
         font-size: smaller;
     }
-
     footer h1 {
         width: 55%;
     }
@@ -241,20 +235,25 @@ body{
     .contact-me li {
         width: 100%;
     }
-    
 }
 
-/* Small smartphones - everything stacks */
-@media screen and (max-width: 420px) {
-    body{
-        background-color: green;
-    }
+/* Small smartphones down to 320px*/
+@media screen and (max-width: 435px) {
     .nav-links {
         padding: 0px;
         margin: 0px;
     }
+    .nav-links li {
+        padding: 0px 17px;
+    }
     .nav-links li a {
         font-size: smaller;
+    }
+    .about-text h1 {
+        font-size: 20px;
+    }
+    .about-text p {
+        font-size: 13px;
     }
     .proficiencies-list {
         flex-direction: column;
@@ -265,12 +264,13 @@ body{
     .previous-work li {
         width: 98%;
     }
+    footer h1 {
+        font-size: 18px;
+    }
     .contact-me {
         width: 60%;
     }
     .contact-me li a {
         font-size: smaller;
     }
-    
-
 }
