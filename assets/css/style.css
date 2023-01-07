@@ -106,6 +106,12 @@ header {
     margin: 0;
 }
 
+.previous-work ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .previous-work li {
     float: left;
     width: 23%;
@@ -126,17 +132,6 @@ header {
     opacity: 50%;
 }
 
-.previous-work li a {
-    float: left;
-    text-decoration: none;
-}
-
-.previous-work ul:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 #first-example {
     width: 98%;
     margin-top: 40px;
@@ -149,6 +144,8 @@ header {
     color: white;
     background-color: var(--light-background);
     padding: 10px 10px 10px 20px;
+    float: left;
+    text-decoration: none;
 }
 
 /* Contact info footer styles */
