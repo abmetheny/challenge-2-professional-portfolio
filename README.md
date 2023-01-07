@@ -34,7 +34,7 @@ Generated HTML and CSS code that accomplished the following:
 * Rewrote CSS styles for several media queries down to 320px
 
 ## Link to deployed GitHub page
-[Deployed Challenge 2 Professional Portfolio Repo](https://abmetheny.github.io/challenge-1-refactor-repo/)
+[Deployed Challenge 2 Professional Portfolio Repo](https://abmetheny.github.io/challenge-2-professional-portfolio/)
 
 ## Screenshots
 <img src="./assets/images/Screenshot1.png">
